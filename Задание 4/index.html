@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>RPG баттл</h1>
+    <button id="newGames" onclick="newGame()"> Начать игру</button>
+    <div id="lvlGame">
+        <h2>Выберете уровень сложности:</h2>
+        <button onclick="easyGame()">Легкий</button>
+        <button onclick="mediumGame()">Средний</button>
+        <button onclick="hardGame()">Тяжелый</button>
+    </div>
+    <div id="playGames">
+        <p id="monsterHit"></p>
+        <p id="infoHitMonster"></p>
+        <p>Выберете действие:</p>
+        <div id="flex">
+        <div>
+        <p id="info1Hit"></p>
+        <button id="1hit" onclick="hitMag1()"></button>
+        </div>
+        <div>
+            <p id="info2Hit"></p>
+        <button id="2hit" onclick="hitMag2()"></button>
+        </div>
+        <div>
+            <p id="info3Hit"></p>
+        <button id="3hit" onclick="hitMag3()"></button>
+    </div>
+    <div>
+        <p id="info4Hit"></p>
+        <button id="4hit" onclick="hitMag4()"></button>
+    </div>
+</div>
+    </div>
+    <div>
+        <p id="health"></p>
+        <p id="steps"></p>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
